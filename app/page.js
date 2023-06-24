@@ -1,9 +1,30 @@
 import Image from 'next/image'
 import styles from './page.module.css'
+import './css/tailwind.css'; // Import the tailwind.css file
+import Navbar from './components/navbar'
 
 export default function Home() {
   return (
     <main className={styles.main}>
+      <div className="navbar bg-base-100 w-full flex justify-between">
+        <div className="flex">
+          <a className="btn btn-ghost normal-case text-xl">.IAM</a>
+        </div>
+        <div className='flex gap-3'>
+          <a className="btn btn-ghost normal-case text-xl">about</a>
+          <a className="btn btn-ghost normal-case text-xl">product</a>
+          <a className="btn btn-ghost normal-case text-xl">team</a>
+        </div>
+        <div>
+
+          <button>
+            Launch app
+          </button>
+
+        </div>
+
+
+      </div>
       <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
